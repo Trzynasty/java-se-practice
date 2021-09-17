@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Qaa Academy" target="1.5" />
+      <module name="Qaa Academy" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>
