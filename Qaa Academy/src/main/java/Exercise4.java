@@ -12,4 +12,11 @@ public class Exercise4 {
             else return false;
         }
     }
+
+    public static void main(String[] args) {
+        System.out.println(isLeapYear(4));
+        System.out.println(isLeapYear(5));
+        System.out.println(isLeapYear(1700));
+        System.out.println(isLeapYear(1600));
+    }
 }
