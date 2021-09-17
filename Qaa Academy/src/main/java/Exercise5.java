@@ -1,7 +1,6 @@
 public class Exercise5 {
     public static boolean areEqualByThreeDecimalPlaces(double firstNumber, double secondNumber){
-        if ((long)(firstNumber*1000)==(long)(secondNumber*1000))return true;
-        else return false;
+        return ((long)(firstNumber*1000)==(long)(secondNumber*1000));
     }
 
     public static void main(String[] args) {
