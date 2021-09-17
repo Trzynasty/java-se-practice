@@ -13,7 +13,7 @@ public class Exercise1 {
             System.out.println("Invalid Value");
         }
         else{
-            System.out.println(String.format("%s km/h = %s m/h",kilometersPerHour,toMilesPerHour(kilometersPerHour)));
+            System.out.printf("%s km/h = %s m/h%n",kilometersPerHour,toMilesPerHour(kilometersPerHour));
         }
     }
 
