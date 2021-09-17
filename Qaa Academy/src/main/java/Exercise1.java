@@ -4,7 +4,7 @@ public class Exercise1 {
             return -1;
         }
         else{
-           return Math.round(kilometersPerHour*0.621);
+           return Math.round(kilometersPerHour/1.609);
         }
     }
 
