@@ -1,3 +1,5 @@
+package Section4;
+
 public class Exercise10 {
     public static void printEqual(int first, int second, int third){
         if(first<0||second<0||third<0) System.out.println("Invalid Value");

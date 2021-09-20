@@ -1,3 +1,5 @@
+package Section4;
+
 public class Exercise2 {
     public static void printMegaBytesAndKiloBytes(int kiloBytes){
         if (kiloBytes<0){

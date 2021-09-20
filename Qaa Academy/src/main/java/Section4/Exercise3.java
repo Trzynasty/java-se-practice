@@ -1,3 +1,5 @@
+package Section4;
+
 public class Exercise3 {
     public static boolean shouldWakeUp(boolean barking,int hourOfDay){
         if(hourOfDay<=23 && hourOfDay>=0){

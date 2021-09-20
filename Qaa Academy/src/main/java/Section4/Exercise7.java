@@ -1,3 +1,5 @@
+package Section4;
+
 public class Exercise7 {
     public static boolean hasTeen(int first, int second, int third){
         return (isTeen(first)|| isTeen(second) || isTeen(third));

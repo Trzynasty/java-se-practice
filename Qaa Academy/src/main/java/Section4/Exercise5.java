@@ -1,3 +1,5 @@
+package Section4;
+
 public class Exercise5 {
     public static boolean areEqualByThreeDecimalPlaces(double firstNumber, double secondNumber){
         return ((long)(firstNumber*1000)==(long)(secondNumber*1000));

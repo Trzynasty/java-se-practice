@@ -1,3 +1,5 @@
+package Section4;
+
 public class Exercise11 {
     public static boolean isCatPlaying(boolean summer,int temperature){
         if(summer) return (temperature>=25 && temperature<=45);

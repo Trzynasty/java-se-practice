@@ -1,3 +1,5 @@
+package Section4;
+
 public class Exercise1 {
     public static long toMilesPerHour(double kilometersPerHour){
         if (kilometersPerHour<0){
