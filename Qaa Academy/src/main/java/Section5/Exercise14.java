@@ -2,7 +2,7 @@ package Section5;
 
 public class Exercise14 {
     public static boolean isOdd(int number){
-        return number>=0 && (number%2==1);
+        return number%2==1;
     }
 
     public static int sumOdd(int start, int end){
