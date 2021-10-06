@@ -1,44 +1,8 @@
 package Section6;
 
 public class Exercise29 {
-    private double firstNumber;
-    private double secondNumber;
-
-    public double getFirstNumber() {
-        return firstNumber;
-    }
-
-    public void setFirstNumber(double firstNumber) {
-        this.firstNumber = firstNumber;
-    }
-
-    public double getSecondNumber() {
-        return secondNumber;
-    }
-
-    public void setSecondNumber(double secondNumber) {
-        this.secondNumber = secondNumber;
-    }
-
-    public double getAdditionResult(){
-        return firstNumber+secondNumber;
-    }
-
-    public double getSubtractionResult(){
-        return firstNumber-secondNumber;
-    }
-
-    public double getMultiplicationResult(){
-        return firstNumber*secondNumber;
-    }
-
-    public double getDivisionResult(){
-        if (secondNumber==0) return 0;
-        else return firstNumber/secondNumber;
-    }
-
     public static void main(String[] args) {
-        Exercise29 calculator = new Exercise29();
+        SimpleCalculator calculator = new SimpleCalculator();
         calculator.setFirstNumber(5.0);
         calculator.setSecondNumber(4);
         System.out.println("add= " + calculator.getAdditionResult());
