@@ -1,4 +1,4 @@
-package Section6;
+package Section6.Exercise34;
 
 public class ComplexNumber {
     private double real;

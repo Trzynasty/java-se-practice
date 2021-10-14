@@ -1,4 +1,4 @@
-package Section6;
+package Section6.Exercise33;
 
 public class Carpet {
     private double cost;

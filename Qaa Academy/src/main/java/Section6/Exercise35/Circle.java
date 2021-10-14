@@ -1,4 +1,4 @@
-package Section6;
+package Section6.Exercise35;
 
 public class Circle {
     private double radius;

@@ -1,4 +1,4 @@
-package Section6;
+package Section6.Exercise31;
 
 public class Exercise31 {
     public static void main(String[] args) {

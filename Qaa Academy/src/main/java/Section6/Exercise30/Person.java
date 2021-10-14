@@ -1,4 +1,4 @@
-package Section6;
+package Section6.Exercise30;
 
 public class Person {
     private String firstName;

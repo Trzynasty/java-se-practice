@@ -1,4 +1,4 @@
-package Section6;
+package Section6.Exercise31;
 
 public class Wall {
     private double width;

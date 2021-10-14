@@ -1,25 +1,17 @@
-package Section6;
+package Section6.Exercise33;
 
-public class Rectangle {
+public class Floor {
     private double width;
     private double length;
 
-    public Rectangle(double width, double length) {
+    public Floor(double width, double length) {
         this.setWidth(width);
         this.setLength(length);
-    }
-
-    public double getWidth() {
-        return width;
     }
 
     public void setWidth(double width) {
         if(width<0) this.width=0;
         else this.width = width;
-    }
-
-    public double getLength() {
-        return length;
     }
 
     public void setLength(double length) {
