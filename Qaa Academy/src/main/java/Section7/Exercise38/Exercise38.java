@@ -1,6 +1,4 @@
-package Section7;
-
-import java.sql.SQLOutput;
+package Section7.Exercise38;
 
 public class Exercise38 {
     public static void main(String[] args) {

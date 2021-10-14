@@ -1,4 +1,4 @@
-package Section7;
+package Section7.Exercise37;
 
 public class Ceiling {
     private int height;

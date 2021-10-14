@@ -1,4 +1,4 @@
-package Section7;
+package Section7.Exercise38;
 
 public class Printer {
     private int tonerLevel;
