@@ -22,5 +22,42 @@ class FilmProcessing {
         Film film15 = new Film("The Suicide Squad",132,7.3,"Action",List.of("Action","Adventure","Comedy"));
 
         List<Film> list = new ArrayList<>(Arrays.asList(film1, film2, film3, film4, film5, film6, film7, film8, film9, film10, film11, film12, film13, film14, film15));
+        getFilmsLongerThen(list,110);
+        printTitlesInUpperCases(list);
+        filterByGenreAndLoweredImbdRate(list,"Action",8.5);
+        getFirstFilmOfGenre(list,"Horror");
+    }
+
+    public static void getFilmsLongerThen(List<Film> list, int duration){
+        List<Film> res = list
+                .stream()
+                .filter(f -> f.getDuration() > duration)
+                .collect(Collectors.toList());
+        System.out.println("Films longer then "+ duration+ ":");
+        res.forEach(n -> System.out.println(n.getTitle()));
+    }
+
+    public static void printTitlesInUpperCases(List<Film> list){
+        System.out.println("Titles in Upper Case:");
+        list.forEach(n -> System.out.println(n.getTitle().toUpperCase()));
+    }
+
+    public static void filterByGenreAndLoweredImbdRate(List<Film> list, String genre, double imbdRate){
+        List<Film>res = list
+                .stream()
+                .filter(f -> f.getGenre().equals(genre) && f.getImdbRate() < imbdRate)
+                .collect(Collectors.toList());
+        System.out.println("Films of genre "+genre+" and with rate lowered then"+ imbdRate);
+        res.forEach(n -> System.out.println(n.getTitle()));
+    }
+
+    public static void getFirstFilmOfGenre(List<Film> list, String genre){
+        Film f = list
+                .stream()
+                .filter(n -> n.getGenre().equals(genre))
+                .findFirst()
+                .orElse(null);
+        System.out.println("Title of first "+genre+" film");
+        if (f!=null) System.out.println(f.getTitle());
     }
 }
