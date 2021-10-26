@@ -17,4 +17,6 @@ public class Album {
         songs.add(new Song(name,duration));
         return true;
     }
+
+
 }
