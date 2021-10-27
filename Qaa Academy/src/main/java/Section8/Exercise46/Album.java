@@ -14,10 +14,10 @@ public class Album {
         songs = new ArrayList<Song>();
     }
 
-    public boolean addSong(String name, double duration){
-        if (name.isEmpty() || duration<0) return false;
+    public boolean addSong(String title, double duration){
+        if (title.isEmpty() || duration<0) return false;
         else{
-            songs.add(new Song(name,duration));
+            songs.add(new Song(title,duration));
             return true;
         }
     }
