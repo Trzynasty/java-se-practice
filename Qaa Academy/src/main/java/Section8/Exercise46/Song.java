@@ -1,15 +1,15 @@
 package Section8.Exercise46;
 
 public class Song {
-    private String name;
+    private String title;
     private double duration;
 
-    public Song(String name, double duration) {
-        this.name = name;
+    public Song(String title, double duration) {
+        this.title = title;
         this.duration = duration;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 }

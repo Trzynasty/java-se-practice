@@ -1,6 +1,7 @@
 package Section8.Exercise46;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Album {
     private String name;
@@ -14,9 +15,34 @@ public class Album {
     }
 
     public boolean addSong(String name, double duration){
-        songs.add(new Song(name,duration));
-        return true;
+        if (name.isEmpty() || duration<0) return false;
+        else{
+            songs.add(new Song(name,duration));
+            return true;
+        }
     }
 
+    private Song findSong(String title){
+        for (Song f:songs) {
+            if (f.getTitle()==title) return f;
+        }
+        return null;
+    }
 
+    public boolean addToPlayList(int songNumber, LinkedList<Song> playlist){
+        if(songs.size()<songNumber) return false;
+        else{
+            playlist.add(songs.get(songNumber-1));
+            return true;
+        }
+    }
+
+    public boolean addToPlayList(String songTitle, LinkedList<Song> playlist){
+        Song song = findSong(songTitle);
+        if (song!=null){
+            playlist.add(song);
+            return true;
+        }
+        return false;
+    }
 }
