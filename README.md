@@ -1,3 +1,3 @@
 # java-se-practice
 My java practice repository.
-It has exercises from Undemy course.
+It has exercises from Udemy course.
